@@ -1,6 +1,6 @@
 # Introduction to Concurrency:
 
-Concurrency is a fundamental concept that describes two or more separate activities happening at the same time. While often discussed in the context of computer science and programming, we implement concurrency daily in our lives without even thinking about it.
+Concurrency is a fundamental concept that describes two or more separate activities happening at the same time. 
 
 ### Daily Life Examples of Concurrency
 We are natural multi-taskers, which is essentially human concurrency. Think about common activities you perform simultaneously:

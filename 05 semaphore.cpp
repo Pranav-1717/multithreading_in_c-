@@ -1,5 +1,5 @@
 //A semaphore is a synchronization primitive that controls access to a shared resource among multiple threads.
-//hink of it as a counter + waiting mechanism.
+//Think of it as a counter + waiting mechanism.
 
 // It keeps track of how many "permits" are available.
 // Threads acquire a permit before entering a critical section.
