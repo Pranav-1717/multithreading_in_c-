@@ -40,6 +40,7 @@ Here is how you would typically use `std::try_lock` in a consumer thread that ne
 ```c++
 #include <mutex>
 #include <iostream>
+using namespace std;
 
 std::mutex m1, m2;
 int X = 0;
@@ -57,7 +58,7 @@ void consume_data() {
             int consumed_value = X + Y;
             X = 0; // Emptying the "buckets"
             Y = 0;
-            std::cout << "Consumed: " << consumed_value << std::endl;
+            cout << "Consumed: " << consumed_value << endl;
         }
 
         // CRITICAL: We must explicitly unlock them after success
@@ -67,7 +68,7 @@ void consume_data() {
         // Failure: lock_result is 0 (m1 failed) or 1 (m2 failed)
         // Since we failed, all locks were automatically released.
         // We can now do something else without waiting.
-        std::cout << "Failed to acquire both locks. Trying again later." << std::endl;
+        cout << "Failed to acquire both locks. Trying again later." << endl;
     }
 }
 
