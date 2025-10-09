@@ -29,5 +29,11 @@ int main() {
 // 👉Note: Detached threads may still be running when the main program exits,
 // which can lead to undefined behavior if they access resources that have been cleaned up.
 
+//Thread life cycle:
+// 1. New: Thread is created but not yet started.
+// 2. Runnable: Thread is ready to run and waiting for CPU time.
+// 3. Running: Thread is executing.
+// 4. Blocked/Waiting: Thread is waiting for a resource or event.
+// 5. Terminated: Thread has finished execution.
 
 
